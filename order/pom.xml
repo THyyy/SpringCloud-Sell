@@ -50,7 +50,7 @@
             <dependency>
                 <groupId>com.example</groupId>
                 <artifactId>product-client</artifactId>
-                <version>${client.version}</version>
+                <version>${product-client.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

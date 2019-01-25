@@ -24,8 +24,8 @@ public interface ProductClient {
     @PostMapping("/product/listForOrder")
     List<ProductInfoOutput> listForOrder(@RequestBody List<String> productIdList);
 
-    @PostMapping("/product/decreateStock")
-    public void decreateStock(@RequestBody List<DecreaseStockInput> decreaseStockInputList);
+    @PostMapping("/product/decreaseStock")
+    public void decreaseStock(@RequestBody List<DecreaseStockInput> decreaseStockInputList);
 
     @Component
     static class ProductClientFallback implements ProductClient {
@@ -36,7 +36,7 @@ public interface ProductClient {
         }
 
         @Override
-        public void decreateStock(List<DecreaseStockInput> decreaseStockInputList) {
+        public void decreaseStock(List<DecreaseStockInput> decreaseStockInputList) {
 
         }
     }

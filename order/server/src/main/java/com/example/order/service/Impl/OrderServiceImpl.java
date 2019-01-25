@@ -73,7 +73,7 @@ public class OrderServiceImpl implements OrderService {
         List<DecreaseStockInput> decreaseStockInputList = orderDTO.getOrderDetailList().stream()
                 .map(e -> new DecreaseStockInput(e.getProductId(), e.getProductQuantity()))
                 .collect(Collectors.toList());
-        productClient.decreateStock(decreaseStockInputList);
+        productClient.decreaseStock(decreaseStockInputList);
 
         //5、订单入库
         OrderMaster orderMaster = new OrderMaster();

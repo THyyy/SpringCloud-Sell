@@ -24,12 +24,12 @@ public class ClientController {
     @Autowired
     private ProductClient productClient;
 
-    @GetMapping("/getProductMsg")
-    public String getProductMsg() {
-        String response = productClient.productMsg();
-        log.info("response={}", response);
-        return response;
-    }
+    // @GetMapping("/getProductMsg")
+    // public String getProductMsg() {
+    //     String response = productClient.productMsg();
+    //     log.info("response={}", response);
+    //     return response;
+    // }
 
     @GetMapping("/getProductList")
     public String getProductList() {
@@ -38,9 +38,9 @@ public class ClientController {
         return "ok";
     }
 
-    @GetMapping("/productDecreateStock")
-    public String productDecreateStock() {
-        productClient.decreateStock(Arrays.asList(new DecreaseStockInput("164103465734242707",3)));
+    @GetMapping("/productDecreaseStock")
+    public String productDecreaseStock() {
+        productClient.decreaseStock(Arrays.asList(new DecreaseStockInput("164103465734242707",3)));
         return "成功";
     }
 }

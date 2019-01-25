@@ -1,2 +1,2 @@
 ## SpringCloud - Sell  
-基于SpringCloud的点餐系统。
+基于SpringClooud的点餐系统。

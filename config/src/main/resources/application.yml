@@ -8,6 +8,7 @@ spring:
           uri: https://github.com/THyyy/config-repo.git
           username: THyyy
           password: woainiCL520
+#          basedir: /tmp/spring-cloud-repo
           basedir: D:\Gitlibrary\config-repo\springcloud-sell
 eureka:
   client:
